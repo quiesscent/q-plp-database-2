@@ -96,3 +96,15 @@ CREATE TABLE product_attribute (
     FOREIGN KEY (attribute_category_id) REFERENCES attribute_category(attribute_category_id),
     FOREIGN KEY (attribute_type_id) REFERENCES attribute_type(attribute_type_id)
 );
+
+-- ========================================
+-- Indexes for Better Query Performance
+-- ========================================
+
+CREATE INDEX idx_product_brand_id ON product(brand_id);
+CREATE INDEX idx_product_category_id ON product(category_id);
+CREATE INDEX idx_product_image_product_id ON product_image(product_id);
+CREATE INDEX idx_product_variation_product_id ON product_variation(product_id);
+CREATE INDEX idx_product_variation_color_id ON product_variation(color_id);
+CREATE INDEX idx_product_item_product_id ON product_item(product_id);
+CREATE INDEX idx_product_attribute_product_id ON product_attribute(product_id);
