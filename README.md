@@ -118,6 +118,10 @@ attribute_value VARCHAR(255)
 - Attributes provide detailed specifications.
 
 ---
+🔗 ERD Diagram
+![Alt Text](./erd.png)
+
+---
 
 ## 🚀 Sample Data
 Seed data includes example brands, categories, products, variations, and attributes to simulate real e-commerce operations.
